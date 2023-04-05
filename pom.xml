@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <groupId>xyz.pretsa</groupId>
+    <artifactId>payara.production.domain.builder</artifactId>
+
+    <version>6.2023.3</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jreleaser</groupId>
+                <artifactId>jreleaser-maven-plugin</artifactId>
+                <version>1.5.1</version>
+                <inherited>false</inherited>
+                <configuration>
+                    <jreleaser>
+                        <release>
+                            <github>
+                                <overwrite>true</overwrite>
+                            </github>
+                        </release>
+                        <files>
+                            <artifacts>
+                                <artifact>
+                                    <path>Payara/appserver/admin/production_domain_template/target/production-domain.jar</path>
+                                </artifact>
+                            </artifacts>
+                        </files>
+                        <upload>
+                            <active>ALWAYS</active>
+                        </upload>
+                    </jreleaser>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <scm>
+        <url>https://github.com/pretsa-xyz/payara-production-domain-builder</url>
+        <connection>scm:git:https://github.com/pretsa-xyz/payara-production-domain-builder.git</connection>
+        <developerConnection>scm:git:https://github.com/pretsa-xyz/payara-production-domain-builder.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+</project>
