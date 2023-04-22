@@ -7,7 +7,7 @@
     <groupId>xyz.pretsa</groupId>
     <artifactId>payara.production.domain.builder</artifactId>
 
-    <version>6.2023.3</version>
+    <version>6.2023.4</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -25,11 +25,6 @@
                 <inherited>false</inherited>
                 <configuration>
                     <jreleaser>
-                        <release>
-                            <github>
-                                <overwrite>true</overwrite>
-                            </github>
-                        </release>
                         <files>
                             <artifacts>
                                 <artifact>
