@@ -7,7 +7,7 @@
     <groupId>xyz.pretsa</groupId>
     <artifactId>payara.production.domain.builder</artifactId>
 
-    <version>6.2023.4</version>
+    <version>6.2023.7</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -21,7 +21,7 @@
             <plugin>
                 <groupId>org.jreleaser</groupId>
                 <artifactId>jreleaser-maven-plugin</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.0</version>
                 <inherited>false</inherited>
                 <configuration>
                     <jreleaser>
