@@ -1,0 +1,14 @@
+project:
+  name: payara-production-domain
+  inceptionYear: 2024
+  stereotype: CLI
+
+release:
+  github:
+    overwrite: true
+    changelog:
+      enabled: false
+
+files:
+  artifacts:
+    - path: Payara/appserver/admin/production_domain_template/target/production-domain.jar

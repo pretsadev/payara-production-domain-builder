@@ -1,4 +1,0 @@
-[submodule "Payara"]
-	path = Payara
-	url = git@github.com:payara/Payara.git
-	branch = master
